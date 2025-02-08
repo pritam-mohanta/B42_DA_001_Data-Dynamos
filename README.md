@@ -74,3 +74,4 @@ The dashboard consists of the following sections:
 ## Contact Information
 For any queries or contributions, feel free to reach out at [abhishekfbd02@gmail.com] or open an issue in the GitHub repository.
 
+## Dashboard Link - https://soloar-power-plant-analysis.streamlit.app/

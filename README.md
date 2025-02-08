@@ -1,77 +1,91 @@
-# B42_DA_001_Data-Dynamos
+# Solar Power Plant Analysis Dashboard
 
-# Data Analysis and Visualization with Streamlit
+## Overview
+This project is a Streamlit-based dashboard designed to analyze and visualize data from a solar power plant. The dashboard provides insights into power generation, weather conditions, and efficiency metrics. It is built to help users explore trends, identify patterns, and make data-driven decisions.
 
-## Project Overview
-This project is a data analysis and visualization application built using Streamlit. The dataset used for analysis is a solar power dataset sourced from Kaggle, containing 34 days of data recorded at 15-minute intervals. The objective of this project is to explore and visualize key trends in solar power generation over time.
+## Key Features
+- **Interactive Date Selection**: Users can select a date range to filter and analyze data.
+- **Key Performance Indicators (KPIs)**: Displays critical metrics such as total DC/AC power, ambient/module temperature, and irradiation.
+- **Visualizations**:
+  - Power distribution (AC and DC) using pie charts.
+  - Correlation heatmap for weather and generation data.
+  - Time-series trends for DC/AC power and daily yield.
+  - Efficiency and power loss analysis.
+  - Impact of temperature on power generation.
+- **Customizable KPIs**: Users can select specific KPIs to display based on their interests.
+- **Enhanced UI**: Styled with custom CSS for a professional and visually appealing interface.
 
-### Objectives:
-- Load and process the solar power dataset.
-- Perform exploratory data analysis (EDA) to extract meaningful insights.
-- Create interactive visualizations using Streamlit.
-- Provide a user-friendly dashboard for viewing key statistics and trends.
+## How to Run the Application Locally
 
-## Running the Streamlit Application Locally
+### Prerequisites:
+- Python 3.8 or higher.
+- Required Python libraries: `streamlit`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`.
 
-### Prerequisites
-Ensure you have the following installed on your system:
-- Python 3.x
-- pip (Python package manager)
-- Streamlit
-- Pandas
-- Matplotlib
-- Seaborn
-- Plotly (if used in visualizations)
+### Installation:
 
-### Installation Steps
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-   ```
+#### 1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+#### 2. Navigate to the project directory:
+```bash
+cd <project-directory>
+```
+#### 3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+#### 4. Run the Application:
+```bash
+streamlit run app.py
+```
+The app will open in your default web browser 
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Data Files:
+Ensure the following CSV files are in the project directory:
+- `Plant_1_Generation_Data.csv`
+- `Plant_1_Weather_Sensor_Data.csv`
 
-3. Run the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
+## Screenshots of the Dashboard
 
-4. Open the displayed URL in your web browser to interact with the application.
+### **1. Main Dashboard**
+- Displays KPIs, power distribution charts, and date selection options.
 
-## Dashboard and Key Insights
-The dashboard consists of the following sections:
+### **2. Correlation Heatmap**
+- Visualizes correlations between weather and generation data.
 
-1. **Overview Section:**
-   - Displays general information about the dataset.
-   - Shows basic statistics (e.g., average power generation, total energy produced).
+### **3. Power Trends**
+- Time-series plots for DC/AC power and daily yield.
 
-2. **Time Series Analysis:**
-   - Visualizes power generation trends over time.
-   - Includes interactive date range filters.
+### **4. Efficiency Analysis**
+- Line chart showing daily efficiency trends.
 
-3. **Daily and Hourly Trends:**
-   - Analyzes variations in power generation throughout the day.
-   - Identifies peak production hours.
+### **5. Temperature Impact**
+- Scatter plots showing the relationship between temperature and power output.
 
-4. **Comparative Analysis:**
-   - Allows comparison of different days or weeks to identify patterns.
+## Deployment Information
+The application is deployed on **Streamlit Cloud** and can be accessed via the following link:
 
-5. **Customizable Data Filters:**
-   - Users can filter the dataset based on specific parameters.
-
-### Screenshots
-*(Include screenshots of the dashboard here to illustrate the interface and insights.)*
+🔗 **https://soloar-power-plant-analysis.streamlit.app/**
 
 ## Additional Notes
-- Ensure that the dataset file (`solar_data.csv` or equivalent) is placed in the appropriate directory.
-- The code is modular and can be extended to include additional visualizations.
-- Future improvements may include forecasting models and more advanced analytics.
+- **Data Preprocessing**:
+  - The data is cleaned and merged before analysis.
+  - Missing or invalid values are handled appropriately.
+- **Customization**:
+  - Users can modify the code to include additional KPIs or visualizations.
+- **Performance Optimization**:
+  - The app uses Streamlit’s caching mechanism (`@st.cache_data`) to improve performance.
 
-## Contact Information
-For any queries or contributions, feel free to reach out at [abhishekfbd02@gmail.com] or open an issue in the GitHub repository.
+## Future Enhancements
+- Add support for multiple plants or datasets.
+- Include **machine learning models** for predictive analysis.
+- Enable **data export functionality** for further analysis.
 
-## Dashboard Link - https://soloar-power-plant-analysis.streamlit.app/
+---
+This documentation provides a **comprehensive guide** to understanding, running, and customizing the **Solar Power Plant Analysis Dashboard**.  
+For any **questions or feedback**, feel free to reach out! 🌞
+Contact
+📧 **Email**: [abhishekfbd02@gmail.com]
+
+

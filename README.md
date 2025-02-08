@@ -72,5 +72,5 @@ The dashboard consists of the following sections:
 - Future improvements may include forecasting models and more advanced analytics.
 
 ## Contact Information
-For any queries or contributions, feel free to reach out at [your-email@example.com] or open an issue in the GitHub repository.
+For any queries or contributions, feel free to reach out at [abhishekfbd02@gmail.com] or open an issue in the GitHub repository.
 

@@ -84,7 +84,7 @@ The application is deployed on **Streamlit Cloud** and can be accessed via the f
 - **Performance Optimization**:
   - The app uses Streamlit’s caching mechanism (`@st.cache_data`) to improve performance.
 
-## Future Enhancements
+## 🔮 Future Enhancements
 - Add support for multiple plants or datasets.
 - Include **machine learning models** for predictive analysis.
 - Enable **data export functionality** for further analysis.

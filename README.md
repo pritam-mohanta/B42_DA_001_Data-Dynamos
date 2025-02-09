@@ -94,7 +94,7 @@ This documentation provides a **comprehensive guide** to understanding, running,
 For any **questions or feedback**, feel free to reach out! 🌞
 Contact
 
-📧 **Email**: [abhishekfbd02@gmail.com]
+📧 **Email**: [abhishekfbd0210@gmail.com]
 
 🐙 GitHub: https://github.com/RP1802
 

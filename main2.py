@@ -104,6 +104,41 @@ df_power_distribution = df_filtered.groupby("DATE")[["AC_POWER", "DC_POWER"]].su
 
 col1, col2 = st.columns(2)
 
+# AC Power Pie Chart
+fig_ac = px.pie(
+    df_power_distribution,
+    values="AC_POWER",
+    names="DATE",
+    title="⚡ AC Power Distribution",
+    color_discrete_sequence=px.colors.sequential.Blues,
+    hole=0.4,
+    height=350
+)
+fig_ac.update_layout(margin=dict(t=60))  # Increase top margin for space below title
+col1.plotly_chart(fig_ac, use_container_width=True)
+
+# DC Power Pie Chart
+fig_dc = px.pie(
+    df_power_distribution,
+    values="DC_POWER",
+    names="DATE",
+    title="🔋 DC Power Distribution",
+    color_discrete_sequence=px.colors.sequential.Oranges,
+    hole=0.4,
+    height=350
+)
+fig_dc.update_layout(margin=dict(t=60))  # Same spacing for consistency
+col2.plotly_chart(fig_dc, use_container_width=True)
+
+
+
+
+
+'''
+df_power_distribution = df_filtered.groupby("DATE")[["AC_POWER", "DC_POWER"]].sum().reset_index()
+
+col1, col2 = st.columns(2)
+
 fig_ac = px.pie(df_power_distribution, values="AC_POWER", names="DATE",
     title="⚡ AC Power Distribution", color_discrete_sequence=px.colors.sequential.Blues, hole=0.4, height=350)
 col1.plotly_chart(fig_ac, use_container_width=True)
@@ -111,6 +146,8 @@ col1.plotly_chart(fig_ac, use_container_width=True)
 fig_dc = px.pie(df_power_distribution, values="DC_POWER", names="DATE",
     title="🔋 DC Power Distribution", color_discrete_sequence=px.colors.sequential.Oranges, hole=0.4, height=350)
 col2.plotly_chart(fig_dc, use_container_width=True)
+
+'''
 # __________________________________________________________________________________________________________________________________
 
 # Sidebar Options
